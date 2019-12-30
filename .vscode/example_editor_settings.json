@@ -1,0 +1,17 @@
+{
+  "files.autoSave": "off",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "terminal.integrated.rendererType": "dom",
+  "editor.codeLens": false,
+  "editor.minimap.maxColumn": 50,
+  "editor.minimap.showSlider": "mouseover",
+  "editor.minimap.renderCharacters": false,
+  "explorer.confirmDragAndDrop": true,
+  "workbench.activityBar.visible": false,
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "off",
+  "breadcrumbs.symbolSortOrder": "type",
+  "breadcrumbs.symbolPath": "on",
+  "npm.enableScriptExplorer": true,
+  "window.zoomLevel": 0
+}

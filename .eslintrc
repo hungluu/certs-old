@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "standard"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "no-var": "error",
+    "consistent-return": "warn",
+    "complexity": ["warn", { "max": 15 }],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "let", "next": "*" },
+      { "blankLine": "any", "prev": "let", "next": "let" },
+      { "blankLine": "any", "prev": "let", "next": "const" },
+      { "blankLine": "always", "prev": "const", "next": "*" },
+      { "blankLine": "any", "prev": "const", "next": "const" },
+      { "blankLine": "any", "prev": "const", "next": "let" },
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "require-atomic-updates": "off"
+  },
+  "overrides": [
+    {
+      "files": "*.spec.js",
+      "globals": {
+        "describe": true,
+        "jest": true,
+        "expect": true,
+        "beforeAll": true,
+        "afterAll": true,
+        "beforeEach": true,
+        "sinon": true,
+        "afterEach": true,
+        "test": true,
+        "it": true
+      }
+    },
+    {
+      "files": "server/*-ui/**",
+      "extends": [
+        "eslint:recommended",
+        "standard",
+        "react-app"
+      ]
+    }
+  ]
+}
