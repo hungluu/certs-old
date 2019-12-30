@@ -23,33 +23,35 @@
     "npm": ">=6.4.1"
   },
   "devDependencies": {
-    "firebase-tools": "^7.11.0",
-    "firebase-functions-test": "^0.1.7",
-    "eslint": "^6.7.2",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
-    "eslint-config-react-app": "^5.1.0",
-    "eslint-plugin-flowtype": "3.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-react": "7.x",
-    "eslint-plugin-react-hooks": "1.x",
     "@typescript-eslint/eslint-plugin": "2.x",
     "@typescript-eslint/parser": "2.x",
-    "babel-eslint": "10.x"
+    "babel-eslint": "10.x",
+    "eslint": "^6.7.2",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "1.x",
+    "eslint-plugin-standard": "^4.0.1",
+    "firebase-functions-test": "^0.1.7",
+    "firebase-tools": "^7.11.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "firebase-admin": "^8.9.0",
     "firebase-functions": "^3.3.0",
     "grpc": "^1.24.2",
     "lusca": "^1.6.1",
-    "passport": "^0.4.1"
+    "passport": "^0.4.1",
+    "validator": "^12.1.0"
   }
 }

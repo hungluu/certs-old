@@ -1,4 +1,5 @@
 const { map, chain, forEach, filter } = require('lodash')
+const ValidationError = require('../errors/ValidationError')
 
 class BaseForm {
   constructor (fields) {
@@ -6,6 +7,14 @@ class BaseForm {
   }
 
   async validate (form) {
+    const validationResult = await this.getValidationResult(form)
+
+    if (!validationResult.success) {
+      throw new ValidationError(validationResult.errors)
+    }
+  }
+
+  async getValidationResult (form) {
     const errors = []
 
     await Promise.all(map(this.fields, (rules, field) => {
