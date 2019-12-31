@@ -1,5 +1,5 @@
 const { map, chain, forEach, filter } = require('lodash')
-const ValidationError = require('../errors/ValidationError')
+const ValidationError = require('../../common/errors/ValidationError')
 
 class BaseForm {
   constructor (fields) {

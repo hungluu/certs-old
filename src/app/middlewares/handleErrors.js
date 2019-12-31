@@ -1,4 +1,4 @@
-const ValidationError = require('../errors/ValidationError')
+const ValidationError = require('../../common/errors/ValidationError')
 
 const handleErrorsMiddleware = (err, _, res, __) => {
   const code = err.code || res.statusCode || 500

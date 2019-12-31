@@ -7,9 +7,12 @@
       {
         "type": "node",
         "request": "attach",
-        "name": "Attach Firebase",
+        "name": "API",
+        "address": "0.0.0.0",
         "port": 9229,
-        "preLaunchTask": "Google Cloud Emulator"
+        "localRoot": "${workspaceFolder}/src",
+        "remoteRoot": "/app",
+        "preLaunchTask": "start"
       }
     ]
 }

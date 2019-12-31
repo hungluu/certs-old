@@ -1,0 +1,16 @@
+version: "3.2"
+services:
+  cache:
+    image: redis:5.0.7-alpine
+    networks:
+      - teku-certs-net
+  api:
+    build: src
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    depends_on:
+      - cache
+    networks:
+      - teku-certs-net
+networks:
+  teku-certs-net:

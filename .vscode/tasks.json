@@ -1,58 +1,14 @@
-// {
-//   "version": "2.0.0",
-//   "tasks": [
-//     {
-//       "label": "Start",
-//       "type": "shell",
-//       "command": "yarn",
-//       "isBackground": true,
-//       "args": [
-//           "emulator"
-//       ],
-//       "group": "build"
-//     },
-//     {
-//       "label": "Deploy",
-//       "type": "shell",
-//       "command": "yarn",
-//       "isBackground": true,
-//       "options": {
-//           "cwd": "${workspaceFolder}/functions/"
-//       },
-//       "args": [
-//           "deploy",
-//           "--trigger-http",
-//           "--timeout",
-//           "600s"
-//       ],
-//       "dependsOn": [
-//           "Start"
-//       ],
-//       "group": "build"
-//     },
-//     {
-//       "label": "Inspect",
-//       "type": "shell",
-//       "command": "functions",
-//       "isBackground": true,
-//       "options": {
-//           "cwd": "${workspaceFolder}/functions/"
-//       },
-//       "args": [
-//           "inspect",
-//           "api"
-//       ],
-//       "dependsOn": [
-//           "Deploy"
-//       ],
-//       "group": "build"
-//     },
-//     {
-//       "label": "Google Cloud Emulator",
-//       "dependsOn": [
-//           "Inspect",
-//       ],
-//       "group": "build"
-//     }
-//   ]
-// }
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start",
+      "type": "shell",
+      "command": "docker-compose",
+      "args": [
+        "up"
+      ],
+      "group": "build"
+    }
+  ]
+}

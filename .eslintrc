@@ -37,14 +37,6 @@
         "test": true,
         "it": true
       }
-    },
-    {
-      "files": "server/*-ui/**",
-      "extends": [
-        "eslint:recommended",
-        "standard",
-        "react-app"
-      ]
     }
   ]
 }
