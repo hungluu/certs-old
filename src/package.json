@@ -23,6 +23,6 @@
     "lodash": "^4.17.15",
     "lusca": "^1.6.1",
     "passport": "^0.4.1",
-    "validator": "^12.1.0"
+    "validator": "^13.7.0"
   }
 }
